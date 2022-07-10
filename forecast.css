@@ -1,0 +1,26 @@
+#forecast-display{
+    height: auto;
+    width: auto;
+    margin-bottom: 150px;
+    column-gap: 20px;
+}
+
+.forecast-weather{
+    background-color: rgba(0, 0, 0, 0.768);
+    position: relative;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.date{
+    font-size: 25px;
+}
+
+.forecast-description{
+    font-size: 17px;
+}
+
+.forecast-temp{
+    margin-top: 10px;
+    font-size: 55px;
+}

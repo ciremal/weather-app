@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="currentWeather.css">
+    <link rel="stylesheet" href="forecast.css">
+</head>
+<body>
+    <div id="container-weather">
+        <div id="weather">
+            <input id="city-input" type="text" placeholder="Enter city">
+            <input id="submit" type="image" src="icons/search-icon.jpg" onclick="getWeather()">
+
+            <div id="weather-info-display" class="hide">
+                <div id="search-tip">To be more specific with your search, enter the name of the
+                    city followed by the country code in the form "City name, country code". For 
+                    example, "Toronto, CA".
+                </div>
+                <div id="city-name"></div>
+                <div id="current-weather-container">
+                    <div id="current-weather">Current Weather</div>
+                    <img id="icon" src="http://openweathermap.org/img/wn/04d@2x.png">
+                    <div id="temp-display">
+                        <span id="temp"></span>
+                        <span id="celcius">&#x2103;</span>
+                    </div>
+                    <div id="temp-feels-display">
+                        Feels like: <span id="temp-feels"></span>&#x2103;
+                    </div>
+                    <div id="description"></div>
+                </div>
+    
+                <div id="weather-details">
+                    <div>Wind Speed
+                        <div id="wind-speed" style="font-size: 20px;"></div>
+                    </div>
+                    <div>Minimum temperature
+                        <div>
+                            <span id="temp-min" style="font-size: 20px;"></span><span style="font-size: 18px;">&#x2103;</span>
+                        </div>
+                    </div>
+                    <div>Maximum temperature
+                        <div>
+                            <span id="temp-max" style="font-size: 20px;"></span><span style="font-size: 18px;">&#x2103;</span>
+                        </div>
+                    </div>
+                    <div>Humidity
+                        <div>
+                            <span id="humidity" style="font-size: 20px;"></span>
+                        </div>
+                    </div>
+                    <div>Sunrise
+                        <div id="sunrise" style="font-size: 20px;"></div>
+                    </div>
+                    <div>Sunset
+                        <div id="sunset" style="font-size: 20px;"></div>
+                    </div>
+                    <div>Visibility
+                        <div id="visibility" style="font-size: 20px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="forecast-container" class="hide">
+        <div id="forecast-display">
+            <div id="forecast-weather-0" class="forecast-weather">
+                <img class="forecast-icon">
+                <div class="date"></div>
+                <div class="forecast-description"></div>
+                <div class="forecast-temp"></div>
+            </div>
+            <div id="forecast-weather-1" class="forecast-weather">
+                <img class="forecast-icon">
+                <div class="date"></div>
+                <div class="forecast-description"></div>
+                <div class="forecast-temp"></div>
+            </div>
+            <div id="forecast-weather-2" class="forecast-weather">
+                <img class="forecast-icon">
+                <div class="date"></div>
+                <div class="forecast-description"></div>
+                <div class="forecast-temp"></div>
+            </div>
+            <div id="forecast-weather-3" class="forecast-weather">
+                <img class="forecast-icon">
+                <div class="date"></div>
+                <div class="forecast-description"></div>
+                <div class="forecast-temp"></div>
+            </div>
+            <div id="forecast-weather-4" class="forecast-weather">
+                <img class="forecast-icon">
+                <div class="date"></div>
+                <div class="forecast-description"></div>
+                <div class="forecast-temp"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

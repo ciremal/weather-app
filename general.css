@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url('https://source.unsplash.com/1920x1080/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hide{
+    display: none;
+}
